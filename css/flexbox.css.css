@@ -1,0 +1,29 @@
+.deck {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  width: 480px;
+  height: 200px;
+  padding: 50px;
+  margin: 20px;
+
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 120px;
+  background: url(../images/practice_photo_helloworld.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
