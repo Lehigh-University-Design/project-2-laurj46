@@ -1,11 +1,11 @@
 :root {
-  --background-color: rgb(153, 174, 154);
-  --light-color: #ffffff;
-  --dark-color: #000000;
+  --background-color: #432E1E;
+  --light-color: #E7DAA6;
+  --dark-color: #432E1E;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   background-color: var(--background-color);
@@ -33,10 +33,14 @@ h2, h3, h4 {
 }
 
 .container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
   max-width: 1080px;
   margin: 0 auto
 }
-
+ 
 /* Masthead */
 masthead {
   display: flex;
@@ -84,6 +88,27 @@ masthead a:hover {
 }
 
 /* main */
+
+ul {
+  padding-inline-start: 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2em;
+  color: var(--light-color);
+  transition: all 0.3s ease 0s;
+}
+
+a:hover {
+  color: #c7a573;
+}
+
 
 #content {
   display: grid;
