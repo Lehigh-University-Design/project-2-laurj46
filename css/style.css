@@ -1,64 +1,82 @@
 :root {
-    
-    
+  --background-color: #472f1d;
+  --light-color: #E7DAA6;
+  --dark-color: #261910; 
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  border: 10px groove var(--dark-color);
   background-color: var(--background-color);
   margin: 1em;
-  font-size: 16px;
+  font-size: 18px;
+ 
 }
-
 
 
 h1 {
-    font-size: 2.5em;
+  font-size: 3em;
+  font-weight: 300;
+  font-family: "Kodchasan", sans-serif;
 }
 
-.column-demo-holder {
-  border: 1px solid var(--dark-color);
-  padding: 1em;
+h2,summary {
+  text-decoration: none;
+  font-family: "Kodchasan", sans-serif;
+  font-size: 2em;
+  font-weight: 250;
+  color: var(--light-color);
+  transition: all 0.3s ease 0s;
+  list-style-type: none;
+}
+
+p {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  text-indent: 2%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1080px;
+  margin: 0 auto
+}
+
+details {
+  width: 100%;
+}
+
+ 
+masthead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: var(--dark-color);
+  color: var(--light-color);
   margin-bottom: 1em;
-  overflow: hidden;
+}
 
-  .column {
-    width: calc(100%/3 - 2rem);
-    aspect-ratio: 1;
-    float: left;
-    padding: 1rem;
-    font-size: 2em;
-    font-weight: 100;
-    font-style: italic;
-    background-color: hsl(16, 100%, 66%);
-    &:nth-child(even){
-      background-color: hsl(16, 100%, 44%);;
-    }
+masthead h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.post {
+  margin-bottom: 1em;
+  p {
+    margin-top: 0;
   }
+}
 
-  .masthead {
-      margin: 1em;
-      height: 100px;
-      background-color: blue;
-  }
-
-  .side-nav {
-      height: 60vh;
-      width: calc(25% - 2rem);
-      float: left;
-      margin: 1em;
-      background-color: rebeccapurple;
-  }
-
-  .article {
-      height: 60vh;
-      width: calc(75% - 2rem);
-      float: left;
-      margin: 1em;       
-      background-color: red;
-  }
-  
-
+img {
+  width: 8rem;
+  height: auto;
+  display: block;
+  margin-right: 1em;
+  margin-left: 15%;
 }
