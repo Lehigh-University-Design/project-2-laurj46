@@ -31,6 +31,12 @@ h2,summary {
   list-style-type: none;
 }
 
+summary:hover {
+color: #755832;
+cursor: default;
+}
+
+
 p {
   font-family: "Koh Santepheap", serif;
   font-weight: 300;
